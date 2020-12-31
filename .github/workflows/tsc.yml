@@ -1,0 +1,23 @@
+name: Typescript
+
+on: 
+  push:
+  pull_request:
+
+jobs:
+  tsc:
+    name: Typescript
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      
+      - name: Install node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15
+      
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Compile Typescript
+        uses: icrawl/action-tsc@v1
