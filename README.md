@@ -1,2 +1,2 @@
-# js-utils
-some javascript utils for your cod
+# code-utilities
+some javascript utils for your code
